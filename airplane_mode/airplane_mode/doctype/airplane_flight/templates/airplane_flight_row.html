@@ -1,0 +1,7 @@
+<div>
+	<a href="{{ doc.route }}">{{ doc.title or doc.name}}</a>
+	<P>{{doc.source_airport_code}}->{{doc.destination_airport_code}}<br>
+	{{frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY")}}|{{doc.time_of_departure}}|{{frappe.utils.format_duration(doc.duration_of_flight)}}<br>
+     <a class="btn btn-info" href="{{ doc.route }}" style="color: blue;"> view flight</a></p>
+</div>
+<!-- this is a sample default list template -->
