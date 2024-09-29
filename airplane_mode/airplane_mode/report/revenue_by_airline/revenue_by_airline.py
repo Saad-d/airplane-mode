@@ -32,6 +32,6 @@ def execute(filters=None):
 	summery = [{
 		"label": "Total Revenue",
         "value": total_revenue,
-        "indicator": "green"
+        "indicator": "Green"
 	}]
 	return columns, data, 'Here is the report', chart, summery
